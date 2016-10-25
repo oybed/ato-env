@@ -111,7 +111,7 @@
 								"scm_url": "https://github.com/rht-labs/infographic",
 								"base_image": "openshift/php",
 								"build_tool": "s2i",
-								"context_dir", "website",
+								"context_dir": "website",
 							}
 						],
 						"user_to_role": [
