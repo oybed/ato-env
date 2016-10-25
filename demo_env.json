@@ -34,14 +34,6 @@
 									{
 										"name": "admin"
 									}
-								],
-								"user": {
-									"user_name": "atodemo"
-								},
-								"roles": [
-									{
-										"name": "view"
-									}
 								]
 							}
 						]
@@ -103,14 +95,6 @@
 								"roles": [
 									{
 										"name": "admin"
-									}
-								],
-								"user": {
-									"user_name": "atodemo"
-								},
-								"roles": [
-									{
-										"name": "view"
 									}
 								]
 							}
