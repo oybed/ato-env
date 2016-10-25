@@ -112,6 +112,22 @@
 								"base_image": "openshift/php",
 								"build_tool": "s2i",
 								"context_dir": "website",
+								"routes": [
+									{
+										"route_type": "passthrough",
+										"hostname": "infographic.dev.ato.rht-labs.com",
+										"port": "8080",
+										"service": {
+											"ports": [
+												{
+													"port": 8080,
+													"protocol": "TCP",
+													"target_port": 8080
+												}
+											]
+										}
+									}
+								]
 							}
 						],
 						"user_to_role": [
@@ -135,6 +151,22 @@
 							{
 								"name": "infographic",
 								"base_image": "infographic",
+								"routes": [
+									{
+										"route_type": "passthrough",
+										"hostname": "infographic.uat.ato.rht-labs.com",
+										"port": "8080",
+										"service": {
+											"ports": [
+												{
+													"port": 8080,
+													"protocol": "TCP",
+													"target_port": 8080
+												}
+											]
+										}
+									}
+								]
 							}
 						],
 						"user_to_role": [
