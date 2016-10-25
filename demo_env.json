@@ -16,29 +16,8 @@
 								"base_image": "openshift/jenkins",
 								"build_tool": "s2i",
 								"environment_variables": {
-									"JENKINS_PASSWORD": "demo",
-								},
-								"routes": [
-									{
-										"route_type": "passthrough",
-										"hostname": "jenkins.dev.ato.rht-labs.com",
-										"port": "8080",
-										"service": {
-											"ports": [
-												{
-													"port": 8080,
-													"protocol": "TCP",
-													"target_port": 8080
-												},
-												{
-													"port": 50000,
-													"protocol": "TCP",
-													"target_port": 50000
-												}
-											]
-										}
-									}
-								]
+									"JENKINS_PASSWORD": "demo"
+								}
 							}
 						],
 						"user_to_role": [
@@ -63,29 +42,8 @@
 								"name": "jenkins",
 								"base_image": "jenkins",
 								"environment_variables": {
-									"JENKINS_PASSWORD": "demo",
-								},
-								"routes": [
-									{
-										"route_type": "passthrough",
-										"hostname": "jenkins.uat.ato.rht-labs.com",
-										"port": "8080",
-										"service": {
-											"ports": [
-												{
-													"port": 8080,
-													"protocol": "TCP",
-													"target_port": 8080
-												},
-												{
-													"port": 50000,
-													"protocol": "TCP",
-													"target_port": 50000
-												}
-											]
-										}
-									}
-								]
+									"JENKINS_PASSWORD": "demo"
+								}
 							}
 						],
 						"user_to_role": [
@@ -111,23 +69,7 @@
 								"scm_url": "https://github.com/rht-labs/infographic",
 								"base_image": "openshift/php",
 								"build_tool": "s2i",
-								"context_dir": "website",
-								"routes": [
-									{
-										"route_type": "passthrough",
-										"hostname": "infographic.dev.ato.rht-labs.com",
-										"port": "8080",
-										"service": {
-											"ports": [
-												{
-													"port": 8080,
-													"protocol": "TCP",
-													"target_port": 8080
-												}
-											]
-										}
-									}
-								]
+								"context_dir": "website"
 							}
 						],
 						"user_to_role": [
@@ -150,23 +92,7 @@
 						"apps": [
 							{
 								"name": "infographic",
-								"base_image": "infographic",
-								"routes": [
-									{
-										"route_type": "passthrough",
-										"hostname": "infographic.uat.ato.rht-labs.com",
-										"port": "8080",
-										"service": {
-											"ports": [
-												{
-													"port": 8080,
-													"protocol": "TCP",
-													"target_port": 8080
-												}
-											]
-										}
-									}
-								]
+								"base_image": "infographic"
 							}
 						],
 						"user_to_role": [
