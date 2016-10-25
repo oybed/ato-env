@@ -107,7 +107,7 @@
 						"apps": [
 							{
 								"name": "infographic",
-								"base_image": "infographic"
+								"base_image": "infographic",
                                                                 "routes": [
                                                                         {
                                                                                 "route_type": "default"
