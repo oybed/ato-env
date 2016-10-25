@@ -14,6 +14,11 @@
 								"scm_url": "https://github.com/rht-labs/openshift-jenkins-s2i-config.git",
 								"scm_ref": "master",
 								"base_image": "openshift/jenkins",
+                                                                "routes": [
+                                                                        {
+                                                                                "route_type": "default"
+									}
+								],
 								"build_tool": "s2i",
 								"environment_variables": {
 									"JENKINS_PASSWORD": "demo"
@@ -41,6 +46,11 @@
 							{
 								"name": "jenkins",
 								"base_image": "jenkins",
+                                                                "routes": [
+                                                                        {
+                                                                                "route_type": "default"
+									}
+								],
 								"environment_variables": {
 									"JENKINS_PASSWORD": "demo"
 								}
@@ -68,6 +78,11 @@
 								"name": "infographic",
 								"scm_url": "https://github.com/rht-labs/infographic",
 								"base_image": "openshift/php",
+                                                                "routes": [
+                                                                        {
+                                                                                "route_type": "default"
+									}
+								],
 								"build_tool": "s2i",
 								"context_dir": "website"
 							}
@@ -93,6 +108,11 @@
 							{
 								"name": "infographic",
 								"base_image": "infographic"
+                                                                "routes": [
+                                                                        {
+                                                                                "route_type": "default"
+									}
+								],
 							}
 						],
 						"user_to_role": [
