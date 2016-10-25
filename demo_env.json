@@ -77,6 +77,7 @@
 							{
 								"name": "infographic",
 								"scm_url": "https://github.com/rht-labs/infographic",
+								"scm_ref": "demo",
 								"base_image": "openshift/php",
                                                                 "routes": [
                                                                         {
