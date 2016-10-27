@@ -68,66 +68,6 @@
 								]
 							}
 						]
-					},
-					{
-						"name": "infographic-dev",
-						"display_name": "InfoGraphic - Development",
-						"environment_type": "build",
-						"apps": [
-							{
-								"name": "infographic",
-								"scm_url": "https://github.com/rht-labs/infographic",
-								"scm_ref": "demo",
-								"base_image": "openshift/php",
-                                                                "routes": [
-                                                                        {
-                                                                                "route_type": "default"
-									}
-								],
-								"build_tool": "s2i",
-								"context_dir": "website"
-							}
-						],
-						"user_to_role": [
-							{
-								"user": {
-									"user_name": "atoadmin"
-								},
-								"roles": [
-									{
-										"name": "admin"
-									}
-								]
-							}
-						]
-					},
-					{
-						"name": "infographic-uat",
-						"display_name": "InfoGraphic - UAT",
-						"environment_type": "promotion",
-						"apps": [
-							{
-								"name": "infographic",
-								"base_image": "infographic",
-                                                                "routes": [
-                                                                        {
-                                                                                "route_type": "default"
-									}
-								]
-							}
-						],
-						"user_to_role": [
-							{
-								"user": {
-									"user_name": "atoadmin"
-								},
-								"roles": [
-									{
-										"name": "admin"
-									}
-								]
-							}
-						]
 					}
 				]
 			}
