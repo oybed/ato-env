@@ -98,16 +98,6 @@
 										"name": "admin"
 									}
 								]
-							},
-							{
-								"user": {
-									"user_name": "atodemo"
-								},
-								"roles": [
-									{
-										"name": "admin"
-									}
-								]
 							}
 						]
 					},
@@ -134,16 +124,6 @@
 								"roles": [
 									{
 										"name": "admin"
-									}
-								]
-							},
-							{
-								"user": {
-									"user_name": "atodemo"
-								},
-								"roles": [
-									{
-										"name": "view"
 									}
 								]
 							}
